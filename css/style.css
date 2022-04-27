@@ -6,7 +6,17 @@ body{
 .black{
     background-color: black;
 }
-
+/* testo */
+.title{
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.text{
+    font-size: 21px;
+    color: #727272;
+    font-weight: 600;
+}
 
 
 /* stile header */
@@ -125,4 +135,14 @@ body{
 .box_img img{
     width: 100%;
     border-radius: 20px;
+}
+
+/* stile new console */
+#new_console{
+    margin-top: 50px;
+}
+
+#new_console span{
+    color: #2586D5;
+    font-weight: 600;
 }
