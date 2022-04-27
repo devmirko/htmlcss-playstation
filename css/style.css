@@ -63,7 +63,7 @@ body{
 @media  (min-width: 576px) { 
     .box_image_jumbo{
       
-        background-position-x: -400px;
+        background-position-x: -500px;
     
     }
  }
@@ -71,7 +71,7 @@ body{
  @media (min-width: 768px) { 
     .box_image_jumbo{
       
-        background-position-x: -200px;
+        background-position-x: -400px;
     
     }
   }
@@ -156,3 +156,10 @@ body{
 #console{
     margin-top: 50px;
 }
+
+#console a{
+    max-width: 200px;
+    border-radius: 30px;
+    font-weight: 600;
+}
+
