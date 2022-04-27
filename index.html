@@ -12,12 +12,12 @@
 <body>
     <!-- testata della pagina -->
     <header>
-        <div class="container">
+        <div class="container-fluid">
             <!-- barra con logo -->
             <div class="row justify-content-end  black">
-                <div class="col-3">
+                <div class="col-2">
                     <div class="box_image">
-                        <img src="img/sony_logo.svg" alt="questo è un logo">
+                        <img src="img/sony_logo.svg" alt="questo è un logo" id="logo_header">
                     </div>
                 </div>
             </div>
@@ -25,32 +25,53 @@
             <div class="row">
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
                     <div class="container-fluid">
-                      <a class="navbar-brand" href="#">Navbar</a>
+                        <!-- logo nav -->
+                      <a class="navbar-brand" href="#">
+                          <img src="img/play_logo.svg" alt="questo è un logo">
+                      </a>
                       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                       </button>
+
                       <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                          <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                          </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Giochi
+                                </a>
+                              </li>
+                        
                           <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Dropdown
+                              Hardware
                             </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                              <li><a class="dropdown-item" href="#">Action</a></li>
-                              <li><a class="dropdown-item" href="#">Another action</a></li>
-                              <li><hr class="dropdown-divider"></li>
-                              <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
                           </li>
-                          <li class="nav-item">
-                            <a class="nav-link disabled">Disabled</a>
+
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Servizi
+                            </a>
                           </li>
+
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Novità
+                            </a>
+                          </li>
+
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Fai acquisti
+                            </a>
+                          </li>
+
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Supporto
+                            </a>
+                          </li>
+                          
                         </ul>
                         <form class="d-flex">
                           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -62,6 +83,30 @@
             </div>
         </div>
     </header>
-    
+
+    <!-- struttura della pagina -->
+    <main>
+    <!-- hero -->
+    <section id="hero">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="box_image_jumbo">
+                        <div class="box_text">
+                            <div class="box_image_banner">
+                                <img src="img/returnal-hero-banner-logo.png" alt="questo è un logo" id="banner">
+                            </div>
+                            <h2>Rompi il ghiaccio</h2>
+                            <p>Rialzati dopo ogni sconfitta e affronta una nuova sfida con ogni rinascita in questo esplosivo trhiller fantascientifico, disponibile in esclusiva su PS5</p>
+                            <a href="">Acquista ora</a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
