@@ -6,6 +6,11 @@ body{
 .black{
     background-color: black;
 }
+
+#blue{
+    background-color: #2586D5;
+    color: white;
+}
 /* testo */
 .title{
     font-size: 40px;
@@ -145,4 +150,9 @@ body{
 #new_console span{
     color: #2586D5;
     font-weight: 600;
+}
+
+/* console */
+#console{
+    margin-top: 50px;
 }
