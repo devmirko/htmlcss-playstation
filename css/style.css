@@ -7,6 +7,8 @@ body{
     background-color: black;
 }
 
+
+
 /* stile header */
 /* parte superiore con logo */
 /* logo sony */
@@ -41,6 +43,33 @@ body{
     align-items: end;
    
 }
+/* media queries */
+/* sm */
+@media  (min-width: 576px) { 
+    .box_image_jumbo{
+      
+        background-position-x: -400px;
+    
+    }
+ }
+/* md */
+ @media (min-width: 768px) { 
+    .box_image_jumbo{
+      
+        background-position-x: -200px;
+    
+    }
+  }
+
+  @media (min-width: 992px) {
+    .box_image_jumbo{
+      
+        background-position-x: 0;
+    
+    }
+}
+
+/*  */
 
 .box_image_banner{
     width: 50%;
@@ -83,3 +112,17 @@ body{
     font-weight: 700;
 }
 
+/* stile card game */
+#new_game{
+  margin-top: 50px;
+}
+
+.box_img{
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+.box_img img{
+    width: 100%;
+    border-radius: 20px;
+}
