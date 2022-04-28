@@ -244,3 +244,31 @@ body{
   #play_store{
       margin-top: 80px;
   }
+
+  /* stile play now */
+  #play_now{
+      background-color: #161C3B;
+      margin-top: 80px;
+  }
+
+  #play_now a{
+    display: inline-block;
+    min-height: 40px;
+    line-height: 40px;
+    background-color:#F5F5F5;
+    color:#000;
+    text-decoration: none;
+    border-radius: 30px;
+    padding: 0 20px;
+    font-weight: 700;
+}
+
+@media (min-width: 768px) { 
+    #play_now #col_ghost{
+      display: block;
+      
+    
+    }
+  
+
+  }
