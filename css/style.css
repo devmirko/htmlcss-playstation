@@ -195,3 +195,10 @@ body{
     width: 100%;
 }
 
+/* stile new entry */
+#new_entry{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #1F1F1F;
+}
+
