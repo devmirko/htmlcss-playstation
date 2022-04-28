@@ -202,3 +202,40 @@ body{
     background-color: #1F1F1F;
 }
 
+
+/* explore */
+#explore{
+    margin-top: 80px;
+}
+
+/* PLAY.PLUS */
+#play_plus{
+    background-color: #BEBCBB;
+    
+}
+
+#play_plus a{
+    display: inline-block;
+    min-height: 40px;
+    line-height: 40px;
+    background-color:#D9DADC;
+    color:#4776E5;
+    text-decoration: none;
+    border-radius: 30px;
+    padding: 0 20px;
+    font-weight: 700;
+}
+
+#col_ghost{
+    display: none;
+}
+
+@media (min-width: 768px) { 
+    #play_plus #col_ghost{
+      display: block;
+      
+    
+    }
+  
+
+  }
