@@ -48,43 +48,20 @@ body{
    padding-left: 0;
    padding-right: 0;
 }
+#hero .row{
+    --bs-gutter-x: 0;
+    --bs-gutter-y: 0;
+}
 
-.box_image_jumbo{
+.box_image_hero{
     background-image: url(../img/jumbo-bg.png);
     width: 100%;
     min-height: 600px;
-    background-position-x: -600px;
+    background-position: center;
     display: flex;
     align-items: end;
    
 }
-/* media queries */
-/* sm */
-@media  (min-width: 576px) { 
-    .box_image_jumbo{
-      
-        background-position-x: -500px;
-    
-    }
- }
-/* md */
- @media (min-width: 768px) { 
-    .box_image_jumbo{
-      
-        background-position-x: -400px;
-    
-    }
-  }
-
-  @media (min-width: 992px) {
-    .box_image_jumbo{
-      
-        background-position-x: 0;
-    
-    }
-}
-
-/*  */
 
 .box_image_banner{
     width: 50%;
@@ -161,5 +138,60 @@ body{
     max-width: 200px;
     border-radius: 30px;
     font-weight: 600;
+}
+
+#console span{
+    display: none;
+}
+
+
+/* media query */
+
+@media (min-width: 768px) { 
+    #console .row{
+      justify-content: space-between;
+      
+    
+    }
+    #console span{
+        display: block;
+        font-weight: 600;
+
+    }
+
+
+  }
+
+  /* jumbo stile */
+ 
+
+ #jumbo .container-fluid{
+    padding-left: 0;
+    padding-right: 0;
+ }
+ 
+ #jumbo .row{
+    --bs-gutter-x: 0;
+    --bs-gutter-y: 0;
+  }
+ 
+
+ .box_image_jumbo{
+    background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
+    width: 100%;
+    min-height: 600px;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    
+   
+}
+
+.box_image_banner_jumbo{
+    max-width: 300px;
+}
+
+.box_image_banner_jumbo img{
+    width: 100%;
 }
 
