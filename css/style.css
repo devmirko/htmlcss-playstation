@@ -25,6 +25,10 @@ body{
 
 
 /* stile header */
+header{
+    position: fixed;
+    width: 100%;
+}
 /* parte superiore con logo */
 /* logo sony */
 .box_image{
@@ -43,6 +47,46 @@ body{
     font-weight: 700;
 }
 
+#nav_right li{
+    margin-left: 10px;
+}
+
+#nav_right .dropdown-toggle::after{
+     content: none;
+}
+
+#nav_left .dropdown-toggle::after{
+    content: none;
+}
+ #nav_right .btn_nav{
+    display: inline-block;
+    min-height: 40px;
+    line-height: 40px;
+    background-color: #363636;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    padding: 0 20px;
+    font-weight: 700;
+ }
+ #ghost_form{
+    display: none;
+}
+
+ /* media query comparsa form nel sottomenu*/
+ @media (max-width: 991.98px) {
+     #ghost_form{
+         display: flex;
+         width: 80%;
+     }
+     #nav_right img{
+         display: none;
+     }
+     #nav_right li{
+         margin-left: 0;
+     }
+  }
+
 /* hero stile */
 #hero .container-fluid{
    padding-left: 0;
@@ -56,15 +100,17 @@ body{
 .box_image_hero{
     background-image: url(../img/jumbo-bg.png);
     width: 100%;
-    min-height: 600px;
+    min-height: 720px;
     background-position: center;
     display: flex;
-    align-items: end;
+    flex-direction: column;
+    justify-content: end;
+    background-position-y: 120px;
    
 }
 
 .box_image_banner{
-    width: 50%;
+    max-width: 300px;
 }
 
 .box_image_banner #banner{
@@ -74,6 +120,7 @@ body{
 .box_text{
     min-height: 300px;
     margin-left: 10px;
+    margin-bottom: 50px;
 }
 
 .box_text h2{
